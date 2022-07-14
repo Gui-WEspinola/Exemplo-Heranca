@@ -26,4 +26,9 @@ public class BusinessAccount extends Account{
             balance += amount - 10; // A utilização do atributo balance de Account como sendo *protected* se faz necessária para que possamos acessar pela subclasse.
         }
     }
+    @Override
+    public void withdraw(double amount){
+        super.withdraw(amount);
+        balance -= 2.0;
+    }
 }
